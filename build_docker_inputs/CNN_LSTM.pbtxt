@@ -1,0 +1,123 @@
+feed {
+  id {
+    node_name: "x"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 40
+    }
+    dim {
+      size: 2
+    }
+  }
+ name: "InputMeasurements"
+ type: DT_FLOAT
+}
+
+feed {
+  id {
+    node_name: "x_1"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 32
+    }
+  }
+ name: "InputHidden"
+ type: DT_FLOAT
+}
+
+feed {
+  id {
+    node_name: "x_2"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 32
+    }
+  }
+ name: "InputCell"
+ type: DT_FLOAT
+}
+
+fetch {
+  id {
+    node_name: "Identity"
+  }
+shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 3
+    }
+  }
+ name: "PredictionStates"
+ type: DT_FLOAT
+}
+
+fetch {
+  id {
+    node_name: "Identity_1"
+  }
+shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 2
+    }
+  }
+ name: "PredictionELMs"
+ type: DT_FLOAT
+}
+
+fetch {
+  id {
+    node_name: "Identity_2"
+  }
+shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 32
+    }
+  }
+ name: "OutputHidden"
+ type: DT_FLOAT
+}
+
+fetch {
+  id {
+    node_name: "Identity_3"
+  }
+shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 32
+    }
+  }
+ name: "OutputCell"
+ type: DT_FLOAT
+}

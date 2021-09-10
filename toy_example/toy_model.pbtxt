@@ -1,0 +1,38 @@
+feed {
+  id {
+    node_name: "x"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+name: "FirstTerm"
+type: DT_INT32
+}
+
+feed {
+  id {
+    node_name: "x_1"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+name: "SecondTerm"
+type: DT_INT32
+}
+
+fetch {
+  id {
+    node_name: "Identity"
+  }
+  shape {
+    dim {
+      size: 1
+    }
+  }
+name: "OutputTerm"
+type: DT_INT32
+}
